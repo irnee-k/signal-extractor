@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "name": "Web Development",
+      "keywords": ["web", "website", "browser", "internet"],
+      "children": [
+        {
+          "id": "1.1",
+          "name": "Frontend Engineering",
+          "keywords": ["html", "css", "dom", "ui", "ux"],
+          "children": [
+            {
+              "id": "1.1.1",
+              "name": "React.js",
+              "keywords": ["react", "jsx", "hook", "component", "redux"]
+            },
+            {
+              "id": "1.1.2",
+              "name": "Vue.js",
+              "keywords": ["vue", "v-model", "vuex"]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "name": "Backend Engineering",
+          "keywords": ["server", "api", "database", "sql", "node"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Data Science",
+      "keywords": ["data", "analysis", "statistics"],
+      "children": [
+        {
+          "id": "2.1",
+          "name": "Python Data Stack",
+          "keywords": ["pandas", "numpy", "matplotlib", "scikit"],
+          "children": []
+        }
+      ]
+    }
+  ]

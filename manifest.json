@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Signal Extractor: Learning Assistant",
+    "version": "1.0",
+    "description": "A privacy-first extension that tracks learning activity securely.",
+    "permissions": ["storage", "activeTab"],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "icons/icon128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+        "<all_urls>"
+        ],
+        "js": ["content-script.js"]
+      }
+    ],
+    "icons": {
+      "128": "icons/icon128.png"
+    }
+  }

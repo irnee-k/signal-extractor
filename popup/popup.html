@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 15px; }
+    h2 { margin-top: 0; color: #333; }
+    .status-box { background: #f0f0f0; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
+    .status-active { color: green; font-weight: bold; }
+    .status-paused { color: orange; font-weight: bold; }
+    .btn { width: 100%; padding: 10px; margin-top: 5px; cursor: pointer; border: none; border-radius: 4px; }
+    .btn-primary { background-color: #007bff; color: white; }
+    .btn-danger { background-color: #dc3545; color: white; margin-top: 15px; }
+    .hidden { display: none; }
+    label { display: block; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <h2>🎓 Signal Extractor</h2>
+
+  <div id="setup-screen">
+    <p>I need permission to securely observe your learning patterns.</p>
+    <div style="margin-bottom: 15px;">
+      <label><input type="checkbox" id="perm-articles" checked> Track Articles (Medium, Dev.to)</label>
+      <label><input type="checkbox" id="perm-code" checked> Track Code (GitHub)</label>
+      <label><input type="checkbox" id="perm-video"> Track Video (YouTube)</label>
+    </div>
+    <button id="btn-start" class="btn btn-primary">Start Tracking & Accept Terms</button>
+  </div>
+
+  <div id="active-screen" class="hidden">
+    <div class="status-box">
+      Status: <span id="status-text" class="status-active">ACTIVE</span>
+    </div>
+    <p style="font-size: 12px; color: #666;">
+      Last Signal: <br>
+      <span id="last-signal">No activity detected yet.</span>
+    </p>
+    <button id="btn-pause" class="btn">⏸ Pause Tracking</button>
+    <button id="btn-delete" class="btn btn-danger">🗑 Delete My Data</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
