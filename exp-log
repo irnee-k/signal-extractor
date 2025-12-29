@@ -1,0 +1,27 @@
+experiment #1 
+12/29/2025 
+
+hypothesis: 
+a. if users can see their aggregated quotes, snippets, learnings, they would compile them. 
+b. users want to aggregate their interesting quotes, snippets, learnings so that they can share and look back. 
+
+user journey: 
+1. user sees something interesting 
+2. user texts at (617) 682-9816
+3. after a week, user sees aggregated, personalized wall of snippets they've compiled 
+4. user also sees recommended content 
+
+behind the scenes journey: 
+A. compile text, images, website from text msg 
+B. manually update wall 
+C. manually send out text on weekly basis 
+D. do some sort of tagging system 
+
+m0 requirements: 
+a. Pinterest-esque wall with log in ability 
+b. Ability to manually add to wall 
+c. Blocks of text or images 
+d. Some sort of summary 
+
+m1 ideas: 
+a. different projects
